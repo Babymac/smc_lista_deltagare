@@ -1,0 +1,173 @@
+/*
+
+Blå basfärg i design: #2777ba eller rgb(39, 119, 186)
+
+Grön knapp: #6eba01
+Blå knapp: #7dadd6
+Röd knapp: #e69090
+Body typsnitt: PT Sans;
+Storlek: 16px
+Knapp o progress: Montserrat
+Knapp font size: 14px
+
+Fälthöjd, spacing etc 52px (26px om litet)
+
+
+*/
+
+
+body {
+	font: normal normal 16px/normal 'PT Sans',Helvetica,Arial,Lucida,sans-serif;
+}
+/*  Header */
+div.top {
+    background-image: linear-gradient(180deg,rgba(39,119,186,0.9) 0%,rgba(39,119,186,0.7) 100%)!important;
+    padding: 40px 0 80px;
+    margin-bottom:52px;
+}
+p.header {
+	background: transparent url(logo-large-front-v1.png) no-repeat 0 50%;
+	background-size: contain;
+	width:100%;
+	height:60px;
+	text-indent:100%;
+	margin:26px auto;
+	max-width:758px;
+	overflow:hidden;
+}
+
+/* Form fields */
+input.form-control {
+    border-radius:0;
+    border-width:1px;
+    border-color:rgba(0,0,0,0.12);
+    padding:16px;
+    color:#999;
+    width:100%;
+    height:52px;
+    font-size:16px;
+    line-height:normal;
+}
+
+input.form-control:focus {
+    border-color:rgba(39, 119, 186,0.4);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.1), 0 0 8px rgba(39, 119, 186,0.4);
+}
+
+/* *** Button styles *** */
+button.btn {
+    border-radius:0;
+    font-size:14px;
+    font-weight:500;
+    font-family:'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    text-transform:uppercase;
+    transition:color 300ms ease 0ms,color 300ms ease 0ms,background-color 300ms ease 0ms,background-color 300ms ease 0ms;
+    float:right;
+}
+	/* Green primary button */
+	button.btn-primary {
+		color:#fff;
+	    border-color:#6eba01;
+		background:#6eba01;	
+	}
+		button.btn-primary:hover {
+			color:#6eba01;
+			border-color:#6eba01;
+		    background:#fff;
+		}
+
+	/* Blue standard button */
+	button.btn-info {
+		color:#fff;
+	    border-color:#7dadd6;
+		background:#7dadd6;	
+	}
+		button.btn-info:hover {
+			color:#7dadd6;
+			border-color:#7dadd6;
+		    background:#fff;
+		}
+
+	/* Red danger button */
+	button.btn-danger {
+		color:#fff;
+	    border-color:#e69090;
+		background:#e69090;
+	}
+		button.btn-danger:hover {
+			color:#e69090;
+			border-color:#e69090;
+		    background:#fff;
+		}
+
+	/* Search button */
+	button.search {
+	    color: #fff;
+	    background: #ccc;
+	    height: 52px;
+	    width: 52px;
+	}
+		button.search:hover {
+			color:#888;
+			background:#eee;
+		}
+	button.add {
+	    color: #fff;
+	    background: #5CB85C;
+	    height: 52px;
+	    width: 52px;
+	}
+
+	/* Generic button extras */
+	button:focus { outline:0!important; }
+	button.float-left { float:left; }
+	button.float-right { float:right; }
+
+
+/* *** Progress indicator in top *** */
+div.progress-indicator { margin: 25px auto 0; }
+div.row.progress-indicator > div {
+	text-align:center;
+	color:#fff;
+	height:52px;
+	padding:16px;
+	text-transform: uppercase;
+    font-family:'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+	div.row.progress-indicator > div.locked { background:rgba(255,255,255,0.5); color:rgba(255,255,255,0.7); }
+	div.row.progress-indicator > div.done { background:rgba(255,255,255,0.2); }
+	div.row.progress-indicator > div.active { background:transparent; color:#fff; border:1px solid #fff; }
+
+/* Investor error list */
+div.list-group > button.listitem {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    margin-bottom: 13px;
+    transition:color 300ms ease 0ms,color 300ms ease 0ms,background-color 300ms ease 0ms,background-color 300ms ease 0ms;
+    cursor:pointer;
+}
+	div.list-group > button.listitem:hover {
+    	background: #2777ba;
+    	border-color: #2777ba;
+    	color: #fff;
+    	font-size:16px;
+	}
+/* Blue separator line */
+hr.blue-separator {
+    border-top-color:#2777ba;
+    border-top-width:3px;
+    width:100%;
+    height:0;
+    margin-bottom:40px;
+}
+
+/* Footer and copyright */
+#main-footer { background-color:#171717; margin-top:52px; padding:26px 0; }
+#footer-info { color:#666; }

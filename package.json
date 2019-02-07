@@ -1,0 +1,23 @@
+{
+  "name": "Main",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "complete-system-start": "npm run install-modules",
+    "system-start": "npm run start-backend",
+    "install-modules": "npm i && cd ./backend && npm i && cd .. && cd ./frontend && npm i && cd .. && npm run build-sections",
+    "build-backend": "cd ./backend && npm run build-production && cd ..",
+    "build-frontend": "cd ./frontend && npm run build && cd ..",
+    "build-sections": "npm run build-frontend && npm run post-build-frontend && npm run build-backend && npm run start-backend",
+    "post-build-frontend": "npm run remove-public && npm run copy-frontend",
+    "copy-frontend": "cp -r ./frontend/build ./backend/public",
+    "remove-public": "rimraf ./backend/public/",
+    "start-backend": "cd ./backend && npm run start"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "react-number-format": "^4.0.6"
+  }
+}
