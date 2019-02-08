@@ -21,7 +21,7 @@ const Landingpage = props => {
 					<h1 className="introHeader"> SMC Deltagar lista </h1>
 				</Row>
 				<Row>
-					<Col md={2} />
+					<Col md={4} />
 					<Col md={4}>
 						<Dropzone
 							onDrop={uploadFile}
@@ -41,7 +41,7 @@ const Landingpage = props => {
 							/>
 						</Dropzone>
 					</Col>
-					<Col md={2} />
+					<Col md={4} />
 				</Row>
 			</Grid>
 		</div>

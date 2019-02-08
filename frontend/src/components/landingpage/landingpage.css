@@ -27,8 +27,8 @@
 
 .dropzone {
 	cursor: pointer;
-	width: 250px;
-	height: 180px;
+	width: 100%;
+	height: 250px;
 	border: dashed 2px white;
 	text-align: center;
 }
