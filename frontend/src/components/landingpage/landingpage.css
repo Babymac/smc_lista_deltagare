@@ -12,3 +12,44 @@
 .introButton {
 	padding-top: 35px;
 }
+
+.introHeader {
+	font-size: 80px;
+	color: yellow;
+	margin-left: 30%;
+}
+
+.submitfilebutton {
+	margin-top: 20px;
+	max-width: 250px;
+	width: 250px;
+}
+
+.dropzone {
+	cursor: pointer;
+	width: 250px;
+	height: 180px;
+	border: dashed 2px white;
+	text-align: center;
+}
+
+.notvalid {
+	cursor: pointer;
+	width: 250px;
+	height: 180px;
+	border: dashed 2px red;
+	text-align: center;
+}
+
+.filetypes {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.dropboxtext {
+	padding-top: 25px;
+}
+
+.loader {
+	padding-left: 50%;
+}

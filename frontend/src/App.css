@@ -15,6 +15,11 @@ Fälthöjd, spacing etc 52px (26px om litet)
 
 */
 
+.sitebackground {
+	background-color: #5090C4;
+	
+}
+
 
 body {
 	font: normal normal 16px/normal 'PT Sans',Helvetica,Arial,Lucida,sans-serif;

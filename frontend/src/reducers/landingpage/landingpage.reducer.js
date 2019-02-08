@@ -1,13 +1,38 @@
 const initialState = {
-	openWizard: false
+	spinner: false,
+	validFile: true,
+	file: {
+		fileName: '',
+		preview: '',
+		size: 0,
+		type: ''
+	},
 };
 
 const landingpage = (state = initialState, action) => {
 	switch (action.type) {
-		case 'ENGAGEWIZARD':
+		case 'SPINNER':
 			return {
 				...state,
-				openWizard: !state.openWizard
+				spinner: !state.spinner
+			};
+
+		case 'VALID_FILE':
+			return {
+				...state,
+				validFile: action.data
+			};
+
+		case 'FILE':
+			const { name, preview, size, type } = action.data[0];
+			return {
+				...state,
+				file: {
+					fileName: name,
+					preview,
+					size,
+					type
+				}
 			};
 
 		default:

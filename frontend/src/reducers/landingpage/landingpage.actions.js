@@ -1,7 +1,23 @@
-export const ENGAGEWIZARD = 'ENGAGEWIZARD';
+export const VALID_FILE = 'VALID_FILE';
+export const SPINNER = 'SPINNER';
+export const FILE = 'FILE';
 
-export function engageWizard() {
+export function fileName(file) {
 	return {
-		type: ENGAGEWIZARD
+		type: FILE,
+		data: file
+	};
+}
+
+export function validFile(valid) {
+	return {
+		type: VALID_FILE,
+		data: valid
+	};
+}
+
+export function spinner() {
+	return {
+		type: SPINNER
 	};
 }
