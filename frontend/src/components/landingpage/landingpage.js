@@ -18,14 +18,14 @@ const Landingpage = props => {
 		<div  className="sitebackground">
 			<Grid>
 				<Row>
-					<h1 className="introHeader"> SMC Deltagar lista </h1>
+					<h1 className="introHeader"> SMC Skåne Deltagarlista </h1>
 				</Row>
 				<Row>
 					<Col md={4} />
 					<Col md={4}>
 						<Dropzone
 							onDrop={uploadFile}
-							accept=".csv"
+							accept=".xlsx"
 							className='dropzone'>
 							<h5 className="dropboxtext">Dra din fil hit, <br/>eller klicka för att lägga till.</h5>
 							<h5>

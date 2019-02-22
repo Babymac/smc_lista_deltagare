@@ -22,15 +22,17 @@
     "express": "^4.16.3",
     "file-type": "^9.0.0",
     "forever": "^0.15.3",
+    "formidable": "^1.2.1",
     "fs": "0.0.1-security",
     "jest-enzyme": "^4.0.1",
     "jsonix": "^2.4.1",
     "jsonwebtoken": "^8.3.0",
-    "multiparty": "^4.2.1",
     "mocha": "^4.0.1",
+    "multiparty": "^4.2.1",
     "q": "^1.5.1",
     "request": "^2.88.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "xlsx": "^0.14.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
